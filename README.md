@@ -82,17 +82,15 @@ The project follows a modular structure to separate concerns (routes, models, da
 
 
 
-## Some learning in this project----> ##
+## Some learning in this project----> 
 --------------------------------------------
 
 ✅ server.js file was trying to execute the data base before the variables of the env load the proccess
 ✅ Solution = reorder the dotenv code line:
 require('dotenv').config(); (This line should be the first onee in the "server.js" file)
 (this had to be the very first line in the code)
------------------------------------------
 
 ✅ Make sure the file .env is writed ✅"MONGODB_URI" instead "MONGODB_URL"
---------------------------------------------------
 
 ✅ Other 
 Postman had troubles Posting my json file because the actual IP adress needed to be Update in mongo db atlas 
