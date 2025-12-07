@@ -83,33 +83,18 @@ The project follows a modular structure to separate concerns (routes, models, da
 
 
 ## Some learning in this project----> ##
+--------------------------------------------
 
-
-
-
-✔️ server.js file was trying to execute the data base before the variables of the env load the proccess
+✅ server.js file was trying to execute the data base before the variables of the env load the proccess
+✅ Solution = reorder the dotenv code line:
+require('dotenv').config(); (This line should be the first onee in the "server.js" file)
+(this had to be the very first line in the code)
 -----------------------------------------
 
- ✅ Solution = reorder the dotenv code line:
- require('dotenv').config(); (This line should be the first onee in the "server.js" file)
- (this had to be the very first line in the code)
------------------------------------------
-
-✔️ Make sure the file .env is writed ✅"MONGODB_URI" instead "MONGODB_URL"
-------------------------------------------
-
-✔️ Other 
-MongoDB connection failed: bad auth : authentication failed
-[nodemon] app crashed - waiting for file changes before starting...
-
-this was for a problem in the database "user pasword"needed to be updated and repaced in the .env file... 
-RESULT:
-PORT=3000
-MONGODB_URI=mongodb+srv://webartistdesign_db_user:*NewPasswordHere*@oscardb.uhazsl9.mongodb.net/
-
-
+✅ Make sure the file .env is writed ✅"MONGODB_URI" instead "MONGODB_URL"
 --------------------------------------------------
-✔️ Other 
+
+✅ Other 
 Postman had troubles Posting my json file because the actual IP adress needed to be Update in mongo db atlas 
 under / Security/Data Base and Network Acess/ IP Access List
 Issue solved ✅ We got the post! (I think it was my antivirus VPN)
