@@ -54,7 +54,7 @@ npm run dev
 | Method | Endpoint | Description| Status Codes
 | :--- | :--- | :--- | :--- |
 | POST | /api/articles | Creates a new article. | "201 (Created) 400 (Bad Request)"|
-| GET | /api/articles | "Retrieves all articles | sorted by creation date.",200 (OK)|
+| GET | /api/articles | "Retrieves all articles sorted by creation date." | 200 (OK)|
 | GET | /api/articles/ | :id Retrieves a single article by its MongoDB ID. | "200 (OK), 404 (Not Found)"|
 | PUT | /api/articles/ | :id Updates an existing article with new data. | "200 (OK), 404 (Not Found), 400 (Validation Error)"|
 | DELETE | /api/articles/ | :id,Deletes a specified article. | "200 (OK), 404 (Not Found)"|
